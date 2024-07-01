@@ -33,4 +33,5 @@ When('I click finish button', async function() {
 
 Then('I should see Thank you for your order!', async function() {
     await this.checkoutPage.checkoutComplete();
+    await this.checkoutPage.verifyTextOnPage('Thank you for your order!');
 });

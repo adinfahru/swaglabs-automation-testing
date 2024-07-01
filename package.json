@@ -1,0 +1,22 @@
+{
+  "name": "login-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:login": "cucumber-js --tags '@login'",
+    "test:checkout": "cucumber-js --tags '@checkout'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0"
+  },
+  "dependencies": {
+    "chromedriver": "^126.0.4",
+    "dotenv": "^16.4.5",
+    "selenium-webdriver": "^4.22.0"
+  }
+}
